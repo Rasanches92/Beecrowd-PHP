@@ -1,0 +1,8 @@
+<?php
+    $product1 = explode(" ", fgets(STDIN));
+    $product2 = explode(" ", fgets(STDIN));
+    
+    $valueToPay = number_format(($product1[1] * $product1[2]) + ($product2[1] * $product2[2]), 2, '.', '');
+    
+    echo "VALOR A PAGAR: R$ $valueToPay" . PHP_EOL;
+?>
